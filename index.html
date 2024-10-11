@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealMates - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("images/united.jpg"); /* Removed inline style */
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="home-page"> <!-- Added class for home page -->
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="HealMates Logo">
+            </a>
+            <h1>HealMates</h1>
+            <nav>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="campaigns.html">CAMPAIGNS</a></li>
+                        <li><a href="resources.html">RESOURCES</a></li>
+                        <li><a href="community.html">COMMUNITY</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="home">
+        <div class="overlay">
+            <h2>Welcome to HealMates</h2>
+            <p><strong>  Three-quarters of all suicides are men, with suicide being the leading cause of death for men under 50 in many countries, including the UK.</strong></p>
+            <p>Despite these alarming figures, many men continue to suffer in silence, believing that seeking help is a sign of weakness.</p>
+            <p>At HealMates, we aim to change this narrative by offering a safe space for men to talk openly about their struggles and find the support they need to reclaim their mental wellbeing.</p>
+            <div class="buttons">
+                <button onclick="location.href='resources.html'">Explore Resources</button>
+                <button onclick="location.href='campaigns.html'">Join Campaigns</button>
+                <button onclick="location.href='contact.html'">Reach Out for Help</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact">
+        <h3>Our Impact</h3>
+        <p>Over 1,000 men supported through our programs</p>
+        <p>90% of participants report improved mental health</p>
+    </section>
+
+    <section id="testimonials">
+        <h3>Testimonials</h3>
+        <blockquote>"HealMates has been a lifesaver. The support and resources have made a huge difference in my life." - John Doe</blockquote>
+        <blockquote>"Thanks to HealMates, I feel more connected and supported than ever before." - Mark Smith</blockquote>
+    </section>
+
+    <section id="events">
+        <h3>Upcoming Events</h3>
+        <p>Join our next mental health awareness walk on October 15th.</p>
+        <p>Participate in our online support group sessions every Wednesday.</p>
+    </section>
+
+    <section id="newsletter">
+        <h3>Stay Informed</h3>
+        <p>Sign up for our newsletter to stay updated on our latest news and events.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="faq">
+        <h3>Frequently Asked Questions</h3>
+        <details>
+            <summary>What is mental health?</summary>
+            <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.</p>
+        </details>
+        <details>
+            <summary>How can I improve my mental health?</summary>
+            <p>Improving mental health can involve regular exercise, a healthy diet, adequate sleep, and seeking professional help when needed.</p>
+        </details>
+    </section>
+
+    <section id="stories">
+        <h3>Volunteer and Supporter Stories</h3>
+        <article>
+            <h4>John's Story</h4>
+            <p>John has been volunteering with HealMates for over a year. He shares his experiences and the impact it has had on his life.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>© 2024 HealMates. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

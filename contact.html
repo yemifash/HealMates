@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HealMates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="HealMates Logo">
+            </a>
+            <h1>CONTACT US</h1>
+            <nav>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="campaigns.html">CAMPAIGNS</a></li>
+                        <li><a href="resources.html">RESOURCES</a></li>
+                        <li><a href="community.html">COMMUNITY</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <p>We would love to hear from you. Fill out the form below, and we will get back to you as soon as possible!</p>
+            <form action="#" method="POST">
+                <label for="name">
+                    <i class="fa fa-user"></i> Name:
+                </label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">
+                    <i class="fa fa-envelope"></i> Email:
+                </label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">
+                    <i class="fa fa-comment"></i> Your Message:
+                </label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    
+        <!-- Immediate Help Section -->
+        <section id="immediate-help">
+            <h2>Need Immediate Assistance?</h2>
+            <p>If you or someone you know is experiencing a mental health crisis, don’t hesitate to reach out to our helpline.</p>
+            <a href="tel:074073610498" class="cta-button">Call Helpline: 07407 3610498</a>
+        </section>
+
+    
+    <footer>
+        <p>© 2024 HealMates. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+    </body>
+    </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealMates - Community</title>
+    <link rel="stylesheet" href="styles.css"> 
+<body class="community-page">
+
+<header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="HealMates Logo">
+            </a>
+            <h1>HealMates</h1>
+            <nav>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="campaigns.html">CAMPAIGNS</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Events and Meetups -->
+    <section id="community-events">
+        <h2>Upcoming Events</h2>
+        <p>Stay connected with our upcoming events and meetups. Whether you prefer in-person or virtual gatherings, there's a way to connect.</p>
+        <ul>
+            <li>Mental Health Support Group (Virtual) - Every Wednesday at 6 PM</li>
+            <li>Walk for Wellbeing - October 15, 2024</li>
+            <li>Annual Men's Health Conference - November 22, 2024</li>
+        </ul>
+        <a href="events.html" class="button">See All Events</a>
+    </section>
+
+    <!-- Success Stories and Testimonials -->
+    <section id="community-stories">
+        <h2>Success Stories</h2>
+        
+<div class="card">
+    <h3>Warren's Journey</h3>
+    <p>
+        "Before I found HealMates, I was struggling in silence. I had been dealing with anxiety for years, but never felt comfortable talking about it. As a man, I thought showing vulnerability would be seen as weakness. The turning point for me was joining the HealMates community.
+    </p>
+    <p>
+        The first step was tough, but I quickly realized that I wasn’t alone. Through their support group, I learned practical ways to manage my anxiety, from mindfulness techniques to establishing a daily routine. I also connected with other men who were facing similar challenges, which made me feel like I was part of a supportive network.
+    </p>
+    <p>
+        Today, I’m in a much better place mentally, and I even volunteer with HealMates to help others who are in the same boat I was in."
+    </p>
+    <img src="images/warren.jpg" alt="Warren's story">
+</div>
+
+<div class="card">
+    <h3>Mark's Journey</h3>
+    <p>
+        "When I first encountered HealMates, I was at a low point in my life. I had lost my job, was feeling isolated, and didn’t know where to turn. I didn’t realize the impact that stress and depression were having on me until I hit rock bottom.
+    </p>
+    <p>
+        One day, while searching for support, I came across HealMates and signed up for their mentorship program. Through one-on-one sessions with a peer mentor, I was able to talk openly about my struggles without feeling judged. My mentor helped me set small, achievable goals to rebuild my confidence.
+    </p>
+    <p>
+        The practical advice and emotional support I received through HealMates gave me the strength to start applying for jobs again, and I eventually landed a new role that I love. HealMates didn’t just help me find mental clarity—they helped me reclaim my life."
+    </p>
+    <img src="images/mark.jpg" alt="Mark's journey">
+</div>
+
+    <!-- Peer Mentorship Program -->
+    <section id="mentorship">
+        <h2>Peer Mentorship Program</h2>
+        <p>Sign up to become a mentor or get paired with someone who understands what you're going through.</p>
+        <a href="register.html" class="button">Learn More & Sign Up</a>
+    </section>
+
+    <!-- Polls Section -->
+    <section id="polls">
+        <h2>Community Poll</h2>
+        <p>What support method do you find most helpful?</p>
+        <ul>
+            <li><input type="radio" name="support-method" value="online-forums"> Online forums</li>
+            <li><input type="radio" name="support-method" value="in-person-support"> In-person support groups</li>
+            <li><input type="radio" name="support-method" value="therapy"> Professional therapy</li>
+            <li><input type="radio" name="support-method" value="friends-family"> Family and friends</li>
+        </ul>
+        <button type="button" class="button" onclick="submitVote()">Submit Vote</button>
+    
+        <!-- Hidden results section -->
+        <div id="poll-results" style="display:none;">
+            <h3>Poll Results</h3>
+            <p>Thank you for your vote! Here's how others have voted:</p>
+            <ul>
+                <li>Online forums: <span id="result-forums">45%</span></li>
+                <li>In-person support groups: <span id="result-support">30%</span></li>
+                <li>Professional therapy: <span id="result-therapy">20%</span></li>
+                <li>Family and friends: <span id="result-family">5%</span></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script>
+    function submitVote() {
+        // Check if a vote option is selected
+        const selectedOption = document.querySelector('input[name="support-method"]:checked');
+        
+        if (selectedOption) {
+            // Show the results section if a vote has been submitted
+            document.getElementById('poll-results').style.display = 'block'; 
+        } else {
+            // Alert user if no option is selected
+            alert('Please select an option before voting.');
+        }
+    }
+    </script>
+
+    <!-- Downloadable Resources Section -->
+    <section id="downloads">
+        <h2>Downloadable Resources</h2>
+        <ul>
+            <li><a href="downloads/self-help-guide.pdf" target="_blank">Self-Help Guide</a></li>
+            <li><a href="downloads/mental-health-worksheet.pdf" target="_blank">Mental Health Worksheet</a></li>
+        </ul>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary style="color: aqua;">How can I join the community?</summary>
+            <p>You can join by participating in our forum and attending events.</p>
+        </details>
+        <details>
+            <summary style="color:rgb(205, 50, 50);">What resources are available?</summary>
+            <p>We provide a variety of resources including articles, helplines, and downloadable materials.</p>
+        </details>
+    </section>
+
+    <section id="volunteering">
+        <h2>Get Involved</h2>
+        <p>Join the HealMates community by volunteering. Whether it's offering support, organizing events, or raising awareness, we need your help.</p>
+        <a href="register.html" class="button">Sign Up to Volunteer</a> 
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 HealMates. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

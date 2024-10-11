@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealMates - Sign Up</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="register-page">
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="HealMates Logo">
+            </a>
+            <h1>HealMates</h1>
+            <nav>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="campaigns.html">CAMPAIGNS</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="registration">
+        <h2>Sign Up for HealMates Programs and Events</h2>
+
+        <!-- Registration Form -->
+        <form id="registration-form" onsubmit="return submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="signup-type">What would you like to sign up for?</label>
+            <select id="signup-type" name="signup-type">
+                <option value="wellness-walk">Walk for Wellness (Event)</option>
+                <option value="mental-health-workshop">Mental Health Workshop (Event)</option>
+                <option value="mens-health-conference">Men's Health Conference (Event)</option>
+                <option value="peer-mentorship">Peer Mentorship Program (Community)</option>
+                <option value="volunteering">Volunteering (Community)</option>
+            </select>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+
+        <p id="confirmation-message" style="display:none;">Thank you for registering! We have received your sign-up.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 HealMates. All rights reserved.</p>
+</footer>
+
+<script>
+function submitForm() {
+    // Hide the form after submission
+    document.getElementById('registration-form').style.display = 'none';
+
+    // Show the confirmation message
+    document.getElementById('confirmation-message').style.display = 'block';
+
+    // Prevent actual form submission since no backend is needed
+    return false;
+}
+</script>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
